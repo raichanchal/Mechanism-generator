@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the number of links."
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16dp"
+        />
+
+    <Spinner
+        android:id="@+id/numOfLinks"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:entries="@array/numberOfLinks"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nol"
+        android:textSize="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"></Spinner>
+
+    <TextView
+        android:id="@+id/dof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Degree of freedom is .."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/numOfLinks"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16dp"/>
+
+    <Spinner
+        android:id="@+id/DegreeOfFreedom"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:entries="@array/degreeOfFreedom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dof"
+        android:textSize="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"></Spinner>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/DegreeOfFreedom"
+        android:onClick="CheckInput"/>
+
+</RelativeLayout>
